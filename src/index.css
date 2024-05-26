@@ -1,0 +1,288 @@
+/* Base styles */
+body {
+  font-family: 'Oswald', sans-serif;
+  background: url('/cows-on-hill.jpg') no-repeat center center/cover; /* Full screen background image */
+  color: #f0f0f0; /* Soft White */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #f0f0f0; /* Soft White */
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff0000; /* Red */
+}
+
+/* Header Styles */
+.header {
+  width: 100%; /* Full width */
+  background-color: rgba(0, 0, 0, 0.8); /* Background color */
+  padding: 1rem 0; /* Padding */
+  box-sizing: border-box; /* Include padding in width and height */
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center; /* Center items vertically */
+}
+
+.header .quick-links {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.header .social-links {
+  display: flex;
+}
+
+.header .social-links a {
+  color: #f0f0f0; /* Soft White */
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header .social-links a:hover {
+  color: #ff0000; /* Red */
+}
+
+/* Section Styles */
+section {
+  padding: 3rem 2rem 4rem 2rem; /* Reduce top padding, increase bottom padding */
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly darker overlay */
+  width: 80%; /* Set width to 80% of the viewport */
+  max-width: 1200px; /* Set a maximum width */
+  margin: 2rem auto; /* Center and add margin */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center all text inside sections */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  color: #f0f0f0; /* Soft White */
+  text-align: center;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Add padding to paragraphs */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f0f0f0; /* Soft White */
+  color: #0d0d0d; /* Dark text for contrast */
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Music Section Styles */
+#music {
+  padding: 4rem 2rem 2rem 2rem; /* Ensure the section has padding */
+  background-color: transparent; /* Remove background color */
+  max-width: 1200px; /* Set a maximum width */
+  margin: 6rem auto; /* Center and shift down */
+  color: #f0f0f0; /* Soft White for text */
+  text-align: center; /* Center all text inside Music section */
+}
+
+#bio {
+  max-width: 1200px; /* Set a maximum width */
+  margin: 6rem auto; /* Center and shift down */
+  border-radius: 10px; /* Rounded corners */
+  color: #f0f0f0; /* Soft White for text */
+}
+
+#bio p {
+  text-align: left; /* Center all text inside Bio section */
+}
+
+#contact {
+  max-width: 1200px; /* Set a maximum width */
+  margin: 6rem auto; /* Center and shift down */
+  border-radius: 10px; /* Rounded corners */
+  color: #f0f0f0; /* Soft White for text */
+  text-align: center; /* Center all text inside Contact section */
+}
+
+#events {
+  max-width: 1200px; /* Set a maximum width */
+  margin: 6rem auto; /* Center and shift down */
+  border-radius: 10px; /* Rounded corners */
+  color: #f0f0f0; /* Soft White for text */
+  text-align: center; /* Center all text inside Events section */
+}
+
+#merch {
+  max-width: 1200px; /* Set a maximum width */
+  margin: 6rem auto; /* Center and shift down */
+  border-radius: 10px; /* Rounded corners */
+  color: #f0f0f0; /* Soft White for text */
+  text-align: center; /* Center all text inside Merch section */
+}
+
+.music-container {
+  width: 100%; /* Ensure it fills the parent */
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%; /* 16:9 aspect ratio */
+}
+
+.music-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Landing Page Styles */
+.landing {
+  height: 100vh;
+  background: url('/Wenson_Calder.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quick-links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.quick-links ul li {
+  margin: 0 0.5rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+
+.social-links a {
+  color: #f0f0f0; /* Soft White */
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ff0000; /* Red */
+}
+
+.landing h1 {
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly darker overlay */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  section {
+    width: 90%; /* Increase width for smaller screens */
+  }
+  .landing h1 {
+    font-size: 3rem;
+  }
+
+  .overlay-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .quick-links ul {
+    flex-direction: row;
+  }
+
+  .social-links {
+    margin-top: 1rem;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 95%; /* Increase width for smaller screens */
+  }
+  .landing h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay-content {
+    align-items: center;
+  }
+
+  .quick-links ul {
+    flex-direction: row;
+  }
+
+  .quick-links ul li {
+    margin: 0.25rem;
+  }
+
+  .social-links {
+    flex-direction: row;
+  }
+
+  .social-links a {
+    margin: 0.25rem;
+  }
+
+
+  .music-container {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    width: 100%; /* Full width for very small screens */
+  }
+  .landing h1 {
+    font-size: 2rem;
+  }
+  .music-container {
+    min-height: 400px;
+  }
+}
